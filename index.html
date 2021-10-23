@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVU</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="monthlyEarning"></div>
+    <div class="nonNFT">
+        <div id="sMama">
+        </div>
+        <div id="sSapling">
+        </div>
+    </div>
+    <div class="nftPlant">
+        <div class="input_id">
+            <input type="number" name="plantID" id="plantID">
+            <select name="nftType" id="nftType">
+                <option value="Mother Tree">Mother Tree</option>
+                <option value="Plant">Plant</option>
+            </select>
+            <select name="plantType" id="plantType">
+                <option value="Fire">Fire</option>
+                <option value="Water">Water</option>
+                <option value="Wind">Wind</option>
+                <option value="Electro">Electro</option>
+                <option value="Ice">Ice</option>
+                <option value="Light">Light</option>
+                <option value="Dark">Dark</option>
+                <option value="Metal">Metal</option>
+                <option value="Parasite">Parasite</option>
+            </select>
+            <input type="number" name="generatedLE" id="generatedLE">
+            <input type="number" name="daysToProduce" id="daysToProduce">
+            <input type="submit" value="Submit" onclick="addNFT(plantID.value,nftType.value,plantType.value,generatedLE.value,daysToProduce.value)">
+        </div>
+        <div id="showNFT">
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
