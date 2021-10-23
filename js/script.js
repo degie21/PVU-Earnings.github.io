@@ -32,7 +32,7 @@ function plantPreview(plant = [], divId){
 function nftPlantPreview(plant = [], divId){
     var  cur_nftType = "'"+plant.nft_type+"'";
     document.getElementById(divId).innerHTML +=
-    '<div class"nft-plant">'+
+    '<div class="nftPlant">'+
         '<div class = "plantID">ID : ' + plant.plant_id + '</div>' +
         '<div class = "plantNFTtype">NFT Type : ' + plant.nft_type + '</div>' +
         '<div class = "plantProduction">Generated LE : ' + plant.generatedLE + 'LE' + ' / ' + plant.daysToProduce + ' days |</div>' +

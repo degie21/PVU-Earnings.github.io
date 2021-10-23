@@ -19,18 +19,14 @@
         <div class="input_id">
             <div class="form">
                 <label for="plantID">Plant ID</label>
-                <input type="number" name="plantID" id="plantID form_field">
-            </div>
-            <div class="form">
-                <label for="plantID">NFT Type</label>
-                <select name="nftType" id="nftType form_field">
+                <input type="number" name="plantID" id="plantID" class="form_field">
+                <label for="nftType">NFT Type</label>
+                <select name="nftType" id="nftType" class="form_field">
                     <option value="Mother Tree">Mother Tree</option>
                     <option value="Plant">Plant</option>
                 </select>
-            </div>
-            <div class="form">
-                <label for="plantID">Plant Type</label>
-                <select name="plantType" id="plantType form_field">
+                <label for="plantType">Plant Type</label>
+                <select name="plantType" id="plantType" class="form_field">
                     <option value="Fire">Fire</option>
                     <option value="Water">Water</option>
                     <option value="Wind">Wind</option>
@@ -41,16 +37,11 @@
                     <option value="Metal">Metal</option>
                     <option value="Parasite">Parasite</option>
                 </select>
+                <label for="generatedLE">Generated LE</label>
+                <input type="number" name="generatedLE" id="generatedLE" class="form_field" placeholder="LE">/
+                <input type="number" name="daysToProduce" id="daysToProduce" class="form_field" placeholder="days">
+                <input type="submit" value="Submit" class="addNFTbtn" onclick="addNFT(plantID.value,nftType.value,plantType.value,generatedLE.value,daysToProduce.value)">
             </div>
-            <div class="form">
-                <label for="plantID">Generated LE</label>
-                <input type="number" name="generatedLE" id="generatedLE form_field">
-            </div>
-            <div class="form">
-                <label for="plantID">Days</label>
-                <input type="number" name="daysToProduce" id="daysToProduce form_field">
-            </div>
-            <input type="submit" value="Submit" onclick="addNFT(plantID.value,nftType.value,plantType.value,generatedLE.value,daysToProduce.value)">
         </div>
         <div id="showNFT">
         </div>

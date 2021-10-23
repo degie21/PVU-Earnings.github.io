@@ -1,6 +1,6 @@
 body {
   background-color: #11131b;
-  color: white;
+  color: white !important;
 }
 
 #monthlyEarning {
@@ -40,10 +40,12 @@ body {
 
 .nftPlant .input_id {
   padding-left: 0;
+  padding-right: 0;
+  width: 30vw;
 }
 
 .nftPlant .input_id .form {
-  display: table;
+  display: block;
   width: 100%;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -51,15 +53,41 @@ body {
   padding: 0.125em;
 }
 
+.nftPlant .input_id .form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .nftPlant .input_id .form input, .nftPlant .input_id .form select {
-  float: right;
-  background-color: orange;
-  width: 45%;
+  background-color: #1b1e2b;
+  width: 10em;
   padding: 0.25em;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nftPlant .input_id .form input#generatedLE, .nftPlant .input_id .form input#daysToProduce {
+  width: 4.3em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .nftPlant #showNFT {
   background-color: #1b1e2b;
   width: 50vw;
+}
+
+.nftPlant #showNFT .nftPlant {
+  background-color: #10121a !important;
+  width: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+  margin: 2.4em;
 }
 /*# sourceMappingURL=style.css.map */

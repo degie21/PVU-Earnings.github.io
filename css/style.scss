@@ -1,7 +1,7 @@
 
 body{
     background-color: #11131b;
-    color: white;
+    color: white !important;
 }
 #monthlyEarning{
     display: flex;
@@ -21,22 +21,40 @@ body{
         padding: 2em 4em;
     }
     .input_id{
-        padding-left:0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 30vw;
         .form{
-            display: table;
+            display: block;
             width: 100%;
             height: min-content;
             padding: 0.125em;
+            label{
+                display: flex;
+            }
             input, select{
-                float: right;
                 background-color: #1b1e2b;
-                width: 45%;
+                width: 10em;
                 padding: 0.25em;
+                color: white;
+                display: flex;
+            }
+            input#generatedLE, input#daysToProduce{
+                width: 4.3em;
+                display: inline-flex;
             }
         }
     }
     #showNFT{
         background-color: #1b1e2b;
         width: 50vw;
+        .nftPlant{
+            background-color: #10121a !important;
+            width: auto;
+            justify-content: space-between;
+            padding: 2em;
+            margin: 2.4em;
+        }
     }
+    
 }
