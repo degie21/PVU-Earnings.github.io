@@ -2,4 +2,64 @@ body {
   background-color: #11131b;
   color: white;
 }
+
+#monthlyEarning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nonNFT {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nonNFT #sMama, .nonNFT #sSapling {
+  padding: 2em 4em;
+}
+
+.nftPlant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nftPlant #showNFT, .nftPlant .input_id {
+  padding: 2em 4em;
+}
+
+.nftPlant .input_id {
+  padding-left: 0;
+}
+
+.nftPlant .input_id .form {
+  display: table;
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 0.125em;
+}
+
+.nftPlant .input_id .form input, .nftPlant .input_id .form select {
+  float: right;
+  background-color: orange;
+  width: 45%;
+  padding: 0.25em;
+}
+
+.nftPlant #showNFT {
+  background-color: #1b1e2b;
+  width: 50vw;
+}
 /*# sourceMappingURL=style.css.map */

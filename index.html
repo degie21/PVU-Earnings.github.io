@@ -17,24 +17,39 @@
     </div>
     <div class="nftPlant">
         <div class="input_id">
-            <input type="number" name="plantID" id="plantID">
-            <select name="nftType" id="nftType">
-                <option value="Mother Tree">Mother Tree</option>
-                <option value="Plant">Plant</option>
-            </select>
-            <select name="plantType" id="plantType">
-                <option value="Fire">Fire</option>
-                <option value="Water">Water</option>
-                <option value="Wind">Wind</option>
-                <option value="Electro">Electro</option>
-                <option value="Ice">Ice</option>
-                <option value="Light">Light</option>
-                <option value="Dark">Dark</option>
-                <option value="Metal">Metal</option>
-                <option value="Parasite">Parasite</option>
-            </select>
-            <input type="number" name="generatedLE" id="generatedLE">
-            <input type="number" name="daysToProduce" id="daysToProduce">
+            <div class="form">
+                <label for="plantID">Plant ID</label>
+                <input type="number" name="plantID" id="plantID form_field">
+            </div>
+            <div class="form">
+                <label for="plantID">NFT Type</label>
+                <select name="nftType" id="nftType form_field">
+                    <option value="Mother Tree">Mother Tree</option>
+                    <option value="Plant">Plant</option>
+                </select>
+            </div>
+            <div class="form">
+                <label for="plantID">Plant Type</label>
+                <select name="plantType" id="plantType form_field">
+                    <option value="Fire">Fire</option>
+                    <option value="Water">Water</option>
+                    <option value="Wind">Wind</option>
+                    <option value="Electro">Electro</option>
+                    <option value="Ice">Ice</option>
+                    <option value="Light">Light</option>
+                    <option value="Dark">Dark</option>
+                    <option value="Metal">Metal</option>
+                    <option value="Parasite">Parasite</option>
+                </select>
+            </div>
+            <div class="form">
+                <label for="plantID">Generated LE</label>
+                <input type="number" name="generatedLE" id="generatedLE form_field">
+            </div>
+            <div class="form">
+                <label for="plantID">Days</label>
+                <input type="number" name="daysToProduce" id="daysToProduce form_field">
+            </div>
             <input type="submit" value="Submit" onclick="addNFT(plantID.value,nftType.value,plantType.value,generatedLE.value,daysToProduce.value)">
         </div>
         <div id="showNFT">

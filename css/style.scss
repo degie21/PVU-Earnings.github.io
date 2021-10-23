@@ -1,4 +1,42 @@
+$form = #1b1e2b;
 body{
     background-color: #11131b;
     color: white;
+}
+#monthlyEarning{
+    display: flex;
+    justify-content: center;
+}
+.nonNFT{
+    display: flex;
+    justify-content: center;
+    #sMama,#sSapling{
+        padding: 2em 4em;
+    }
+}
+.nftPlant{
+    display: flex;
+    justify-content: center;
+    #showNFT , .input_id{
+        padding: 2em 4em;
+    }
+    .input_id{
+        padding-left:0;
+        .form{
+            display: table;
+            width: 100%;
+            height: min-content;
+            padding: 0.125em;
+            input, select{
+                float: right;
+                background-color: #1e2130;
+                width: 45%;
+                padding: 0.25em;
+            }
+        }
+    }
+    #showNFT{
+        background-color: #1b1e2b;
+        width: 50vw;
+    }
 }
