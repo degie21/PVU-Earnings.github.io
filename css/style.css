@@ -12,17 +12,56 @@ body {
           justify-content: center;
 }
 
-.nonNFT {
+.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.nonNFT #sMama, .nonNFT #sSapling {
+.plantInput .nonNFT #sMama, .plantInput .nonNFT #sSapling {
   padding: 2em 4em;
+}
+
+.plantInput .input_id {
+  padding: 2em 4em;
+}
+
+.plantInput .input_id {
+  padding-left: 0;
+  padding-right: 0;
+  width: 30vw;
+}
+
+.plantInput .input_id .form {
+  display: block;
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 0.125em;
+}
+
+.plantInput .input_id .form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.plantInput .input_id .form input, .plantInput .input_id .form select {
+  background-color: #1b1e2b;
+  width: 10em;
+  padding: 0.25em;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.plantInput .input_id .form input#generatedLE, .plantInput .input_id .form input#daysToProduce {
+  width: 4.3em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .nftPlant {
@@ -34,54 +73,16 @@ body {
           justify-content: center;
 }
 
-.nftPlant #showNFT, .nftPlant .input_id {
+.nftPlant #showNFT {
   padding: 2em 4em;
 }
 
-.nftPlant .input_id {
-  padding-left: 0;
-  padding-right: 0;
-  width: 30vw;
-}
-
-.nftPlant .input_id .form {
-  display: block;
-  width: 100%;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  padding: 0.125em;
-}
-
-.nftPlant .input_id .form label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nftPlant .input_id .form input, .nftPlant .input_id .form select {
-  background-color: #1b1e2b;
-  width: 10em;
-  padding: 0.25em;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nftPlant .input_id .form input#generatedLE, .nftPlant .input_id .form input#daysToProduce {
-  width: 4.3em;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.nftPlant #showNFT {
+.nftPlant .plants {
   background-color: #1b1e2b;
   width: 50vw;
 }
 
-.nftPlant #showNFT .nftPlant {
+.nftPlant .plants .nftPlant {
   background-color: #10121a !important;
   width: auto;
   -webkit-box-pack: justify;

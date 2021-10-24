@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- version 0.1 -->
+    <!-- version 0.2 -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,42 +9,50 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div id="monthlyEarning"></div>
-    <div class="nonNFT">
-        <div id="sMama">
-        </div>
-        <div id="sSapling">
-        </div>
-    </div>
-    <div class="nftPlant">
-        <div class="input_id">
-            <div class="form">
-                <label for="plantID">Plant ID</label>
-                <input type="number" name="plantID" id="plantID" class="form_field">
-                <label for="nftType">NFT Type</label>
-                <select name="nftType" id="nftType" class="form_field">
-                    <option value="Mother Tree">Mother Tree</option>
-                    <option value="Plant">Plant</option>
-                </select>
-                <label for="plantType">Plant Type</label>
-                <select name="plantType" id="plantType" class="form_field">
-                    <option value="Fire">Fire</option>
-                    <option value="Water">Water</option>
-                    <option value="Wind">Wind</option>
-                    <option value="Electro">Electro</option>
-                    <option value="Ice">Ice</option>
-                    <option value="Light">Light</option>
-                    <option value="Dark">Dark</option>
-                    <option value="Metal">Metal</option>
-                    <option value="Parasite">Parasite</option>
-                </select>
-                <label for="generatedLE">Generated LE</label>
-                <input type="number" name="generatedLE" id="generatedLE" class="form_field" placeholder="LE">/
-                <input type="number" name="daysToProduce" id="daysToProduce" class="form_field" placeholder="days">
-                <input type="submit" value="Submit" class="addNFTbtn" onclick="addNFT(plantID.value,nftType.value,plantType.value,generatedLE.value,daysToProduce.value)">
+    <div class="main">
+        <div class="plantInput">
+            <div class="nonNFT">
+                <div id="sMama">
+                </div>
+                <div id="sSapling">
+                </div>
+            </div>
+            <div class="input_id">
+                <div class="form">
+                    <label for="plantID">Plant ID</label>
+                    <input type="number" name="plantID" id="plantID" class="form_field">
+                    <label for="nftType">NFT Type</label>
+                    <select name="nftType" id="nftType" class="form_field">
+                        <option value="Mother Tree">Mother Tree</option>
+                        <option value="Plant">Plant</option>
+                    </select>
+                    <label for="plantType">Plant Type</label>
+                    <select name="plantType" id="plantType" class="form_field">
+                        <option value="Fire">Fire</option>
+                        <option value="Water">Water</option>
+                        <option value="Wind">Wind</option>
+                        <option value="Electro">Electro</option>
+                        <option value="Ice">Ice</option>
+                        <option value="Light">Light</option>
+                        <option value="Dark">Dark</option>
+                        <option value="Metal">Metal</option>
+                        <option value="Parasite">Parasite</option>
+                    </select>
+                    <label for="generatedLE">Generated LE</label>
+                    <input type="number" name="generatedLE" id="generatedLE" class="form_field" placeholder="LE">/
+                    <input type="number" name="daysToProduce" id="daysToProduce" class="form_field" placeholder="days">
+                    <input type="submit" value="Submit" class="addNFTbtn" onclick="addNFT(plantID.value,nftType.value,plantType.value,generatedLE.value,daysToProduce.value)">
+                </div>
             </div>
         </div>
-        <div id="showNFT">
+        <div class="nftPlant">
+            <div class="plants">
+                <div id="monthlyEarning"></div>
+                <div id="shownonNFT">
+                </div>
+                <div id="showNFT">
+                </div>
+            </div>
         </div>
     </div>
     <script src="./js/script.js"></script>

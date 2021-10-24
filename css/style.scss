@@ -7,17 +7,17 @@ body{
     display: flex;
     justify-content: center;
 }
-.nonNFT{
+.main{
     display: flex;
-    justify-content: center;
-    #sMama,#sSapling{
-        padding: 2em 4em;
-    }
 }
-.nftPlant{
-    display: flex;
-    justify-content: center;
-    #showNFT , .input_id{
+.plantInput{
+    
+    .nonNFT{
+        #sMama,#sSapling{
+            padding: 2em 4em;
+        }
+    }
+    .input_id{
         padding: 2em 4em;
     }
     .input_id{
@@ -45,7 +45,14 @@ body{
             }
         }
     }
+}
+.nftPlant{
+    display: flex;
+    justify-content: center;
     #showNFT{
+        padding: 2em 4em;
+    }
+    .plants{
         background-color: #1b1e2b;
         width: 50vw;
         .nftPlant{
