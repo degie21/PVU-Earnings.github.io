@@ -10,6 +10,31 @@ window.onload = function() {
     plantPreview(sunSap, "sSapling");
     pvuRefresh();
   };
+// Get the modal
+var modal = document.getElementById("donatepopup");
+
+// Get the button that opens the modal
+var btn = document.getElementById("btnDonate");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("donateclosebtn")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 function pvuRefresh(){
     
     monthlyProduction = 0;
@@ -83,9 +108,9 @@ function leMonthlyProduction(plant = []){
 }
 
 function addNFT(plantID, nftType, plantType, generatedLE, daysToProduce){
-    // if(plantID == "" || nftType == "" || plantType == "" || generatedLE == "" || daysToProduce == "" ){
-    //     return;
-    // }
+    if(plantID == "" || nftType == "" || plantType == "" || generatedLE == "" || daysToProduce == "" ){
+        return;
+    }
     nftPlantID = nftPlant.length;
     nftPlant = nftPlant.concat({"id" : nftPlantID, "plant_id" : plantID, "nft_type" : nftType, "type" : plantType, "generatedLE" : generatedLE, "daysToProduce": daysToProduce});
     pvuRefresh();
