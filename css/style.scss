@@ -1,11 +1,25 @@
 //v 0.3
+@font-face{
+    font-family: austie_bost;
+    src: url(/font/austie_bost_chunky_description.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
 body{
-    background-color: #11131b;
+    background-color: #9cc356;
     color: white !important;
+    margin: 1em 3em;
+    *{
+      font-family: austie_bost;
+    }
 }
+
 .header{
-    .title h1{
+    .title {
         text-align: center;
+        img{
+            width: 30rem;
+        }
     }
 }
 .donatepopup {
@@ -55,6 +69,13 @@ body{
     .nonNFT{
         #sMama,#sSapling{
             padding: 2em 4em;
+            .addPlant input{
+                background: #fdc25b;
+                border-radius: 36px;
+                width: 100%;
+                height: 2rem;
+                cursor: pointer;
+            }
         }
     }
     .input_id{
@@ -89,12 +110,13 @@ body{
 .nftPlant{
     display: flex;
     justify-content: center;
+    width: 100%;
     #showNFT{
         padding: 2em 4em;
     }
     .plants{
         background-color: #1b1e2b;
-        width: 50vw;
+        width: 75%;
         .nftPlant{
             background-color: #10121a !important;
             width: auto;

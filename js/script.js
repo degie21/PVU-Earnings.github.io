@@ -48,13 +48,7 @@ function pvuRefresh(){
 
 function plantPreview(plant = [], divId){
     console.log(plant);
-    document.getElementById(divId).innerHTML =
-    '<div id"'+ plant.plantClass + '">'+
-        '<div class = "plantName">Name : ' + plant.name + '</div>' +
-        '<div class = "plantCost">Cost : ' + plant.cost + '</div>' +
-        '<div class = "plantProduction">Generated LE : ' + plant.generatedLE + 'LE' + ' / ' + plant.daysToProduce + ' days' +
-        '<div class = "addPlant"><input type="submit" value="Add Plant" onclick="addPlant('+ plant.plantClass +',' + plant.name +',' + plant.type + ',' + plant.generatedLE + ',' + plant.daysToProduce +')"></div>' +
-    '</div>';
+    document.getElementById(divId).innerHTML += '<div class = "addPlant"><input type="submit" value="Add Plant" onclick="addPlant('+ plant.plantClass +',' + plant.name +',' + plant.type + ',' + plant.generatedLE + ',' + plant.daysToProduce +')"></div>';
 }
 
 function addPlant(plantclass, name, type, generatedLE, daysToProduce){
